@@ -87,7 +87,6 @@ $ajaxUtils.sendGetRequest(
   true); // Explicitely setting the flag to get JSON from server processed into an object literal
 });
 // *** finish **
-console.log("here");
 
 // Builds HTML for the home page based on categories array
 // returned from the server.
@@ -103,6 +102,7 @@ function buildAndShowHomeHTML (categories) {
       // variable's name implies it expects.
       var chosenCategoryShortName = chooseRandomCategory(categories).short_name;
 
+console.log("here");
 
       // TODO: STEP 3: Substitute {{randomCategoryShortName}} in the home html snippet with the
       // chosen category from STEP 2. Use existing insertProperty function for that purpose.
