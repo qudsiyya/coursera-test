@@ -102,7 +102,7 @@ function buildAndShowHomeHTML (categories) {
       // variable's name implies it expects.
       var chosenCategoryShortName = chooseRandomCategory(categories);
       var temp = chosenCategoryShortName.short_name;
- console.log("after step 2");
+      console.log("after step 2", temp);
 
       // TODO: STEP 3: Substitute {{randomCategoryShortName}} in the home html snippet with the
       // chosen category from STEP 2. Use existing insertProperty function for that purpose.
@@ -117,7 +117,7 @@ function buildAndShowHomeHTML (categories) {
       //
       temp = "'" + temp + "'";
       var homeHtmlToInsertIntoMainPage = insertProperty(homeHtml, "temp", temp);
-       console.log("after step 3");
+       console.log("after step 3", temp);
       //var homeHtmlToInsertIntoMainPage = 
 
 
