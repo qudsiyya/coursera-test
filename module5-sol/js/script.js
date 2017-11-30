@@ -35,6 +35,7 @@ var showLoading = function (selector) {
   html += "<img src='images/ajax-loader.gif'></div>";
   insertHtml(selector, html);
 };
+ 
 
 // Return substitute of '{{propName}}'
 // with propValue in given 'string'
