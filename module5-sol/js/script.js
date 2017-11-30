@@ -98,7 +98,7 @@ function buildAndShowHomeHTML (categories) {
     homeHtmlUrl,
     function (homeHtml) {
       var chosenCategoryShortName = chooseRandomCategory(categories).short_name;     
-      chosenCategoryShortName = "'" + chosenCategoryShortName + "'";
+      //chosenCategoryShortName = "'" + chosenCategoryShortName + "'";
       var homeHtmlToInsertIntoMainPage = insertProperty(homeHtml, "chosenCategoryShortName", chosenCategoryShortName);
       insertHtml("#main-content", homeHtmlToInsertIntoMainPage);
       // TODO: STEP 2: Here, call chooseRandomCategory, passing it retrieved 'categories'
